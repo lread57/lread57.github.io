@@ -1,1 +1,99 @@
-<h1>Hello</h1>
+<!DOCTYPE HTML>
+
+<head>
+    <title>Luke Read</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    <div id="content">
+        <h1>Luke Read</h1>
+        <h2>About me</h2>
+        <p>
+            Hi, my name is Luke. I am a computer science student.
+            Since I was young I wanted to be a software developer.
+            I grew up around video games and computers and always had a curiosity
+            towards technology. I began modding the video games I played and before long I
+            found myself having as much fun developing mods as I was playing the game.
+            Nowadays I enjoy learning new things and working on small projects.
+        </p>
+        <h2>Hobbies</h2>
+        <p>
+           One of the main things I like to do in my free time is play video games. I also enjoy listening to a wide variety of music.
+           When I am not doing one of those things I enjoy working on programming projects. I like to know what makes the things I use
+           everyday work and creating my own small prototypes.
+        </p>
+        <h2>Some of my skills</h2>
+        <div id="skillscontainer">
+            <div class="skillcolumn">
+                <img src="https://skillicons.dev/icons?i=c&theme=light">
+                <p class="skilltext">C has always been my goto language, I enjoy its balance of control and simplicity</p>
+                <img src="https://skillicons.dev/icons?i=linux&theme=light">
+                <p class="skilltext">I like the modularity and customizability of Linux, I have been using it on my home desktop for 2 years</p>
+            </div>
+            <div class="skillcolumn">
+                <img src="https://skillicons.dev/icons?i=py&theme=light">
+                <p class="skilltext">I often use Python for scripts or short programs where im not concerned with types</p>
+                <img src="https://skillicons.dev/icons?i=git&theme=light">
+                <p class="skilltext">Many mods are hosted on GitHub, which quickly made me accustomed to using git from the start</p>
+            </div>
+            <div class="skillcolumn">
+                <img src="https://skillicons.dev/icons?i=ruby&theme=light">
+                <p class="skilltext">I have always found Rubys approach to OOP interesting and I enjoy using it on web projects.</p>
+                <img src="https://skillicons.dev/icons?i=neovim&theme=light">
+                <p class="skilltext">Many editors feel very convoluted, I enjoy using neovim for its absolute simplicity and modularity</p>
+            </div>
+            <div class="skillcolumn">
+                <img src="https://skillicons.dev/icons?i=rust&theme=light">
+                <p class="skilltext">More recently I have been using Rust, the way it handles memory and concurrency is fascinating.</p>
+                <img src="https://skillicons.dev/icons?i=bash&theme=light">
+                <p class="skilltext">I have over time learned to efficiently use bash as it is the default shell for most linux distributions.</p>
+            </div>
+        </div>
+        <h2>Projects</h2>
+            <div class="projectscolumn">
+                <h3>Portfolio Website</h3>
+                <p>
+                    This is the website you are seeing now, which I made for a university assignment.
+                    As you can see, when the cursor is moved a pixel effect follows it. This effect
+                    is actually something called Conway's game of life. Each pixel represents a cell
+                    and they die or spread depending on their surrondings. Moving your cursor places
+                    cells below it. This was made in vanilla javascript with no framework.
+                </p>
+                <h3>B Tree Implementation in Rust</h3>
+                <p>
+                    When first learning Rust I chose to implement a B tree as a project
+                    to learn the language. A B-tree is a type of data structure called a tree.
+                    A tree is a data structure which represents a heirarchy of nodes, with only
+                    one root node being at the very top. A B-Tree splits branches into ranges of
+                    indexes, which makes it very fast for searching across lots of nodes and a
+                    good choice for database systems.
+                </p>
+                <h3>Kernel Space Programs</h3>
+                <p>
+                    <br>
+                    I have also created multiple small programs that run in kernel space. Each of these
+                    have a UEFI program on them which allow them to be booted from a USB. These programs
+                    each do different things, one can read data from the disk, the other writes to
+                    a graphics framebuffer and can display images. These small projects were deceptively
+                    complicated with no standard library to rely on, and taught me alot about assembly
+                    and computers.
+                </p>
+                <h3>Map of Spotify</h3>
+                <p>
+                    In this project I created a kind of 'map' of spotify. I wrote a script that recursively builds a graph
+                    of spotify artists. The script would start at an artist A. It would then look at the artists that users who like A
+                    most often listen to. From there it would add A as a node then add these similar artists as nodes
+                    and link them to A. It would then go to the first similar artist B and add their similar artists as nodes
+                    and link them to B. It would then go to the second similar artist of A, C and do the same. Once it had linked all
+                    of A's similar artists it would repeat the process with B, then C and so on. Recursively building a graph of artists
+                    on spotify. I then visualized this data using a python graphing library.
+                </p>
+            </div>
+        </div>
+        <br><br><br>
+        <p><a href="https://github.com/lread57">Click here to return to my GitHub profile</a></p>
+        <br>
+    </div>
+</body>
